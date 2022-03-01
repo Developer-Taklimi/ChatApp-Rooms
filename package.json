@@ -1,0 +1,28 @@
+{
+  "name": "chatapp-rooms",
+  "version": "1.0.0",
+  "description": "Realtime chat app with rooms ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev" : "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samtaklimi87/TrainingCourse-ChatApp-with-Rooms.git"
+  },
+  "author": "Sam Taklimi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Samtaklimi87/TrainingCourse-ChatApp-with-Rooms/issues"
+  },
+  "homepage": "https://github.com/Samtaklimi87/TrainingCourse-ChatApp-with-Rooms#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
