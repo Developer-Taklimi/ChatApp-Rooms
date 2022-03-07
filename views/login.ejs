@@ -1,17 +1,39 @@
-<h1>Login</h1>
-<% if (messages.error) { %>
-  <%= messages.error %>
-<% } %>
-<form action="/login" method="POST">
-  <div>
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+
+<body style="background-color: #e6e9ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;">
+  <div style="display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              padding: 100px;
+              background-color: #7386ff;">
+    <h1>Login</h1>
+    <% if (messages.error) { %>
+      <%= messages.error %>
+        <% } %>
+          <form action="/login" method="POST">
+            <div style="padding: 6px 0px;display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div style="padding: 6px 0px;display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <button style="background-color: #2e83c0; padding: 2px 15px;width: 100%;" type="submit">Login</button>
+          </form>
+          <a style="color: black; padding: 6px 0px; font-weight: 600;
+                    font-size: 25px;" href="/register">Register</a>
   </div>
-  <div>
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required>
-  </div>
-  <button type="submit">Login</button>
-</form>
-<a href="/register">Register</a>
+
+</body>
+
+</html>
+
 <!-- <p>Please follow <a href="/index.html">this link</a>.</p> -->
